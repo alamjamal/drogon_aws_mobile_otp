@@ -1,0 +1,45 @@
+{
+    "listeners": [
+        {
+            "address": "127.0.0.1",   
+            "port": 8848,                 
+            "https": false,                
+            "cert_file": "",               
+            "key_file": "",                
+            "use_compression": true,     
+            "idle_connection_timeout": 60 
+        }
+    ],
+    "thread_num": 4,                   
+    "document_root": "./public",         
+    "upload_path": "./uploads",         
+    "log": {
+        "log_path": "./logs",            
+        "logfile_base_name": "drogon",   
+        "logfile_size_limit": 10000000,   
+        "log_level": "DEBUG"         
+    },
+    "enable_session": true,              
+    "session": {
+        "timeout": 3600                 
+    },
+    "ssl": {
+        "verify_client": false            
+    },
+    "use_running_as_daemon": false,       
+    "use_systemd": false,             
+    "plugins": [
+
+    ],
+    "static_file_types": [
+        "html", "js", "css", "png", "jpg", "jpeg", "gif", "ico", "svg"
+    ],
+    "limits": {
+        "max_request_length": 1048576    
+    },
+    "headers": {
+        "Access-Control-Allow-Origin": "*", 
+        "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
+        "Access-Control-Allow-Headers": "Content-Type,Authorization"
+    }
+}

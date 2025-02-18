@@ -1,0 +1,13 @@
+[requires]
+drogon/1.9.8
+nlohmann_json/3.11.3
+openssl/3.3.2
+mariadb-connector-c/3.3.8
+aws-sdk-cpp/1.11.352
+
+[generators]
+CMakeDeps
+CMakeToolchain
+
+[options]
+aws-sdk-cpp/1.11.352:s3=True
